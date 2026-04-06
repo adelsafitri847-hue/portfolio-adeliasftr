@@ -1,0 +1,177 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior:smooth;
+}
+
+/* BACKGROUND ELEGAN */
+body{
+  background: linear-gradient(135deg,#1a1a1a,#2c2c2c);
+  color:#f5f5f5;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:15px;
+  z-index:1000;
+}
+
+nav a{
+  color:#ccc;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#d4af37; /* gold */
+}
+
+nav a.active{
+  color:#d4af37;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:50px;
+  border-right:3px solid #d4af37;
+  white-space:nowrap;
+  overflow:hidden;
+  color:#fff;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:20px;
+  padding:10px 25px;
+  border:none;
+  border-radius:25px;
+  background: linear-gradient(45deg,#d4af37,#b8962e);
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #d4af37;
+}
+
+/* SECTION */
+section{
+  padding:100px 20px;
+  max-width:1100px;
+  margin:auto;
+  opacity:0;
+  transform:translateY(50px);
+  transition:1s;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* GLASS */
+.glass{
+  background: rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background: rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:15px;
+  transition:0.4s;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 20px rgba(212,175,55,0.5);
+}
+
+/* GALLERY */
+.gallery{
+  width:100%;
+  border-radius:15px;
+  cursor:pointer;
+  transition:0.4s;
+  filter: brightness(90%);
+}
+
+.gallery:hover{
+  transform:scale(1.05);
+  filter: brightness(110%);
+}
+
+/* MODAL */
+.modal{
+  display:none;
+  position:fixed;
+  z-index:2000;
+  padding-top:100px;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.95);
+}
+
+.modal img{
+  display:block;
+  margin:auto;
+  max-width:80%;
+  border-radius:20px;
+  box-shadow:0 0 20px #d4af37;
+}
+
+/* CONTACT */
+.contact a{
+  display:block;
+  margin:10px 0;
+  color:#ccc;
+  text-decoration:none;
+}
+
+.contact a:hover{
+  color:#d4af37;
+}
+
+/* TITLE */
+h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#d4af37;
+}
